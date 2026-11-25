@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Câu hỏi 08 - Lý thuyết JavaScript</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: Arial, sans-serif; background: #f3f6fa; color: #1b2430; padding: 20px; line-height: 1.65; }
+    .wrap { max-width: 760px; margin: 0 auto; }
+    h1 { font-size: 1.6rem; margin-bottom: 4px; }
+    .info { color: #4a5868; margin-bottom: 20px; }
+    section { background: #fff; border: 1px solid #d3dce8; border-radius: 8px; padding: 18px 20px; margin-bottom: 14px; }
+    h2 { font-size: 1.05rem; margin-bottom: 8px; color: #1f5fbf; }
+    code { background: #eef2f7; padding: 1px 5px; border-radius: 4px; }
+    a { display: inline-block; margin-top: 6px; color: #1f5fbf; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Câu hỏi 08 – Lý thuyết JavaScript</h1>
+    <p class="info">Họ tên: <b>Lu Gia Hưng</b> | Mã SV: <b>255A010006</b></p>
+
+    <section>
+      <h2>1. JavaScript là gì? Nó được dùng để làm gì trong thiết kế web?</h2>
+      <p>JavaScript là một ngôn ngữ lập trình được sử dụng phổ biến trong thiết kế và phát triển website. JavaScript giúp cho trang web trở nên sinh động và có tính tương tác hơn thay vì chỉ hiển thị nội dung tĩnh. Trong thiết kế web, JavaScript được dùng để xử lý các thao tác của người dùng như nhấn nút, hiển thị thông báo, kiểm tra thông tin trong biểu mẫu, tạo hiệu ứng chuyển động, cập nhật nội dung mà không cần tải lại trang và hỗ trợ xây dựng các chức năng khác nhau trên website. Nhờ có JavaScript mà trang web trở nên tiện lợi và thân thiện hơn với người sử dụng.</p>
+    </section>
+
+    <section>
+      <h2>2. Các kiểu dữ liệu chính trong JavaScript là những kiểu nào?</h2>
+      <p>JavaScript có các kiểu dữ liệu chính bao gồm String, Number, Boolean, Undefined, Null, BigInt, Symbol và Object. Trong đó, String dùng để lưu trữ dữ liệu dạng chữ và ký tự, Number dùng để lưu trữ các giá trị số, Boolean chỉ có hai giá trị là true và false, Undefined là kiểu dữ liệu khi một biến đã được khai báo nhưng chưa có giá trị, còn Null thể hiện một giá trị rỗng được gán có chủ ý. BigInt dùng để lưu trữ các số nguyên có giá trị rất lớn, Symbol dùng để tạo ra các giá trị định danh duy nhất và Object dùng để lưu trữ nhiều dữ liệu dưới dạng thuộc tính và giá trị. Ngoài ra, Array và Function cũng là những dạng đối tượng thường được sử dụng trong JavaScript.</p>
+    </section>
+
+    <section>
+      <h2>3. Sự khác biệt giữa var, let và const trong JavaScript là gì?</h2>
+      <p>Trong JavaScript, var, let và const đều được sử dụng để khai báo biến nhưng có một số điểm khác nhau. Var là cách khai báo biến kiểu cũ, có phạm vi hoạt động trong hàm hoặc phạm vi toàn cục và có thể khai báo lại cũng như thay đổi giá trị. Let được sử dụng để khai báo biến có phạm vi hoạt động trong một khối lệnh, có thể thay đổi giá trị nhưng không thể khai báo lại cùng tên trong cùng một phạm vi. Const cũng có phạm vi hoạt động trong một khối lệnh giống let nhưng không thể gán lại giá trị sau khi đã khai báo và bắt buộc phải có giá trị ban đầu. Theo em, hiện nay nên ưu tiên sử dụng let và const vì chúng giúp quản lý biến rõ ràng hơn, hạn chế những lỗi không cần thiết trong quá trình viết chương trình.</p>
+    </section>
+
+    <section>
+      <h2>4. JavaScript có phải là ngôn ngữ lập trình đơn luồng không? Giải thích ngắn gọn.</h2>
+      <p>JavaScript là ngôn ngữ lập trình đơn luồng, nghĩa là tại một thời điểm nó chỉ thực hiện một công việc trên một luồng xử lý chính. Các câu lệnh thường được thực hiện lần lượt theo thứ tự từ trên xuống dưới. Tuy nhiên, JavaScript vẫn có thể xử lý các công việc bất đồng bộ như gọi API, đặt thời gian chờ hoặc tải dữ liệu mà không cần phải chờ những công việc đó hoàn thành mới thực hiện các câu lệnh tiếp theo. Điều này được hỗ trợ thông qua cơ chế Event Loop, Callback, Promise và Async/Await. Nhờ vậy, website vẫn có thể hoạt động mượt mà và không bị đứng trong khi chờ xử lý những tác vụ mất thời gian.</p>
+    </section>
+
+    <section>
+      <h2>5. Hàm delete trong JavaScript có tác dụng gì?</h2>
+      <p>Trong JavaScript, delete là một toán tử dùng để xóa một thuộc tính của đối tượng (Object). Khi sử dụng delete, chương trình sẽ loại bỏ thuộc tính được chỉ định ra khỏi đối tượng và nếu xóa thành công thì thường trả về giá trị true. Ví dụ, nếu có một đối tượng sinhVien gồm các thuộc tính ten, tuoi và lop thì khi sử dụng lệnh <code>delete sinhVien.tuoi</code>, thuộc tính tuoi sẽ bị xóa khỏi đối tượng sinhVien. Tuy nhiên, cần lưu ý rằng delete không dùng để xóa trực tiếp một biến đã khai báo bằng var, let hoặc const. Ngoài ra, khi sử dụng với mảng, delete chỉ xóa phần tử tại vị trí đó nhưng không làm thay đổi độ dài của mảng mà chỉ để lại một vị trí trống.</p>
+    </section>
+
+    <a href="index.html">← Về trang chủ</a>
+  </div>
+</body>
+</html>
